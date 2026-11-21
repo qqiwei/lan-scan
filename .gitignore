@@ -1,0 +1,6 @@
+/target
+.DS_Store
+
+# local-only cargo config (machine-specific target-dir: this working copy
+# lives inside iCloud Drive, and a synced `target/` corrupts incremental builds)
+.cargo/config.toml

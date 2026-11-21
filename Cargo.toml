@@ -1,0 +1,20 @@
+[package]
+name = "lan-scan"
+description = "LAN discovery with fingerprints: SSH banners, Dangbei TVs, HTTP servers, SMB"
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/qqiwei/lan-scan"
+rust-version = "1.100"
+
+[[bin]]
+name = "lan-scan"
+path = "src/main.rs"
+
+[dependencies]
+if-addrs = "0.15"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
